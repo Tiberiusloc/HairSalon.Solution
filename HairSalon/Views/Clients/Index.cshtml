@@ -18,6 +18,12 @@
 	<li>Client: @Html.ActionLink($"{client.Name}", "Details", new{id = client.ClientId}) | Stylist: @client.Stylist.Name</li>
 }
 </ul>
+<h3>Search by Stylist: </h3>
+@using (Html.BeginForm("Search", "Clients", FormMethod.Get))
+{
+  @Html.DropDownList("StylistId")
+  <input type="submit" value="search"/>
+}
 
 <p> @Html.ActionLink("Add a Client", "Create") </p>
 <p> @Html.ActionLink("Return to Stylist list", "Index", "Stylists") </p>
