@@ -8,14 +8,13 @@
 <p>Please make sure all parties are aware of last date of work.</p>
 
 @Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(model => model.Name)
-@Html.DisplayNameFor(model => model.Specialty) : @Html.DisplayFor(model => model.Specialty)
-@Html.DisplayNameFor(model => model.Description) : @Html.DisplayFor(model => model.Description)
+@Html.DisplayNameFor(model => model.Notes) : @Html.DisplayFor(model => model.Notes)
 
 @using (Html.BeginForm())
 {
-  <input type="submit" value="Fire Stylist" />
+  <input type="submit" value="Remove Client" />
 }
 
-@Html.ActionLink("Back to Stylists", "Index")
-@Html.ActionLink("Show all Clients", "Index", "Clients")
+@Html.ActionLink("Back to Clients", "Index")
+@Html.ActionLink("Show all Stylists", "Index", "Stylists")
 @Html.ActionLink("Return Home", "Index", "Home")

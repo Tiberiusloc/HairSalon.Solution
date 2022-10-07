@@ -5,30 +5,18 @@
 @using HairSalon.Models;
 
 
-@if (Model.Count == 0)
-{
-	<p>@ViewBag.StylistName is not avaiable at this Salon :(</p>
-}
-else
-{
-	
-<h3>Details on @Model[0].Stylist.Name :</h3>
+<h3>Client Detalis</h3>
 
-<p>@Model[0].Stylist.Description</p>
+<h4>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h4>
+<p>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Notes)</p>
+<p>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+<p>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+<p>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
 
-<h3>Clients for @Model[0].Stylist.Name</h3>
-
-<ul>
-@foreach (Client client in Model)
-{
-	<li>@Html.ActionLink($"{client.Name}", "Details", new { id = client.clientId}) | @client.PriceRange</li>
-}
-</ul>
-}
 
 <p>@Html.ActionLink("Edit this Stylist", "Edit", new {id = ViewBag.StylistId })</p>
 <p>@Html.ActionLink("Delete this Stylist", "Delete", new {id = ViewBag.StylistId })</p>
 <p>@Html.ActionLink("Add new Stylist", "Create")</p>
 <p>@Html.ActionLink("See All Stylists", "Index")</p>
-<p>@Html.ActionLink("See All clients", "Index", "clients")</p>
+<p>@Html.ActionLink("See All Clients", "Index", "Clients")</p>
 <p>@Html.ActionLink("Return Home", "Index", "Home")</p>
