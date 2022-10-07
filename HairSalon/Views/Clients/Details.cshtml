@@ -3,19 +3,18 @@
 }
 
 @using HairSalon.Models;
-
+@model HairSalon.Models.Client
 
 <h3>Client Detalis</h3>
 
-<h4>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h4>
-<p>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Notes)</p>
-<p>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
-<p>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
-<p>@Html.DipslayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+<h4>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h4>
+<p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Notes)</p>
+<p>Current Sylist: @Html.DisplayFor(model => model.Stylist.Name)</p>
 
 
-<p>@Html.ActionLink("Edit this Stylist", "Edit", new {id = ViewBag.StylistId })</p>
-<p>@Html.ActionLink("Delete this Stylist", "Delete", new {id = ViewBag.StylistId })</p>
+
+<p>@Html.ActionLink("Edit this Stylist", "Edit", new {id = Model.ClientId })</p>
+<p>@Html.ActionLink("Delete this Stylist", "Delete", new {id = Model.ClientId })</p>
 <p>@Html.ActionLink("Add new Stylist", "Create")</p>
 <p>@Html.ActionLink("See All Stylists", "Index")</p>
 <p>@Html.ActionLink("See All Clients", "Index", "Clients")</p>
