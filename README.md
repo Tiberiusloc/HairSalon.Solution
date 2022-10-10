@@ -11,9 +11,14 @@ Eau Claire's Hair Salon is an application allowing a salon owner to create, edit
 
 |                    | Minimum Product Features |
 | ------------------ | ------------------------ |
-| :heavy_check_mark: |                          |
-| :heavy_check_mark: |                          |
-| :heavy_check_mark: |                          |
+| :heavy_check_mark: | Do the database table and column names follow proper naming conventions?                         |
+| :heavy_check_mark: | Do the project folder and exported database follow the specific naming requirements for this project?                         |
+| :heavy_check_mark: | Are the instructions for re-creating your database thorough and clear?                         |
+| :heavy_check_mark: | Is there a one-to-many relationship set up correctly in the database?                         |
+| :heavy_check_mark: | Is CREATE functionality included for one class and is CREATE and VIEW functionality included for the other class?                         |
+| :heavy_check_mark: | Build files and sensitive information are included in .gitignore file and is not to be tracked by Git, and includes instructions on how to create the appsettings.json and set up the project.                         |
+| :heavy_check_mark: | Project is in a polished, portfolio-quality state.                         |
+| :heavy_check_mark: | The prompt’s required functionality and baseline project requirements are in place by the deadline.                         |
 
 ## Setup/Installation Requirements
 
